@@ -1,5 +1,5 @@
 # ============================================================
-# SMARTPHONE ADVISOR
+# Travel ADVISOR
 # Chatbot Perbandingan Produk untuk Tim Sales & Marketing
 # Powered by LangChain + Groq + FAISS
 #
@@ -33,7 +33,7 @@ from rag_pipeline import build_rag_pipeline
 
 # ── Konfigurasi Halaman ────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Smartphone Advisor",
+    page_title="Bingah Travel",
     page_icon="📱",
     layout="wide"
 )
