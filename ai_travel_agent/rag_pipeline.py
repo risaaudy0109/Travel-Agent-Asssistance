@@ -155,12 +155,6 @@ def build_rag_pipeline():
     # Temperature 0.2 = answers are relatively consistent and factual
 
     api_key = os.getenv("GROQ_API_KEY")
-
-    st.write("API key ada:", api_key is not None)
-
-    if api_key:
-    st.write("Awalan:", api_key[:4])
-    st.write("Panjang:", len(api_key))
     llm = ChatGroq(
     model=LLM_MODEL,
     temperature=0.2,
