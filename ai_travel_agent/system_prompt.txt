@@ -1,5 +1,3 @@
-[file name]: system_prompt.txt
-[file content begin]
 <system_prompt>
 
   <role>
@@ -69,4 +67,3 @@
 </question>
 
 <answer>
-[file content end]
