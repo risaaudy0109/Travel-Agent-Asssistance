@@ -14,7 +14,7 @@
 #   6. GENERATE → LLM crafts an answer from the retrieved pieces
 #
 # ============================================================
-
+from pathlib import Path
 import os
 from dotenv import load_dotenv          # Read .env file to get API keys
 from langchain_community.document_loaders import TextLoader             # Convert knowledge documents into LangChain-friendly format
