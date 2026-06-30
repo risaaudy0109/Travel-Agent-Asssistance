@@ -35,7 +35,7 @@ load_dotenv()
 DATA_PATH = "data/trip_catalog.txt"
 
 # Location of the system prompt file
-SYSTEM_PROMPT_PATH = "system_prompt.txt"
+SYSTEM_PROMPT_PATH = Path(__file__).parent / "system_prompt.txt"
 
 # Embedding model: turns text into number vectors
 # Using a multilingual model so it understands Indonesian
