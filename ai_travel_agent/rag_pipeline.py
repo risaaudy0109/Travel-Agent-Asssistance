@@ -153,10 +153,13 @@ def build_rag_pipeline():
     # Groq is a platform that provides access to LLMs with
     # extremely fast inference speeds.
     # Temperature 0.2 = answers are relatively consistent and factual
+
+    api_key = os.getenv("GROQ_API_KEY")
+
     llm = ChatGroq(
-        model=LLM_MODEL,
-        temperature=0.2,  # Lower = more consistent, higher = more creative
-        api_key=os.getenv("GROQ_API_KEY")
+    model=LLM_MODEL,
+    temperature=0.2,
+    api_key=api_key
     )
 
     # ------------------------------------------------------------------
